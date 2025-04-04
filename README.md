@@ -1,4 +1,4 @@
-This C program sorts an array using a modified Bubble Sort algorithm. The twist: it only performs sorting on odd-numbered passes (1st, 3rd, 5th, etc.). Even-numbered passes are skipped.
+This programs sorts an array using a modified Bubble Sort algorithm. The twist: it only performs sorting on odd-numbered passes (1st, 3rd, 5th, etc.). Even-numbered passes are skipped.
 
 🔍 How it works
 
