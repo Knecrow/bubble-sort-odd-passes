@@ -1,26 +1,29 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
 
-    int arr[5]={4,3,2,1,5};
+int main() {
+    int n;
+    scanf("%d", &n);
 
-    for(int i=0;i<5;i++){
-if(i%2==0){
-for(int j=0;j<4;j++)
- {
-    if(arr[j]>arr[j+1] ){
-int temp=arr[j];
-arr[j]=arr[j+1];
-arr[j+1]=temp;
-
-    }
- }
-}
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
+    for (int i = 0; i < n; i++) {
+        if (i % 2 == 0) {
+            for (int j = 0; j < n - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
 
-for(int i=0;i<5;i++)
-{
-    printf("%d ",arr[i]);
-}
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
     return 0;
 }
